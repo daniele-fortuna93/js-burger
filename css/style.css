@@ -1,0 +1,33 @@
+/* reset */
+* {
+  box-sizing: border-box;;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #fff5e2;
+}
+
+/* mix */
+
+.container {
+  background-color: #fff;
+  width: 50%;
+}
+
+/* Header */
+header{
+  background-color: #fdbb40;
+  padding: 50px 30px 40px 30px;
+}
+ /* main */
+.button_calculate{
+  text-align: center;
+}
+ /* footer */
+ footer {
+   background-color: #d33359;
+   display: flex;
+   justify-content: space-between;
+   padding: 40px 30px;
+ }
