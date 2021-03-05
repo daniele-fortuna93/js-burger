@@ -7,7 +7,6 @@ var codiciSconto = ["123456789", "987654321", "20off"];
 var couponUtente = document.getElementById('coupon');
 
 // 1. Funzione al click
-
 bottoneCalcolo.addEventListener('click',
 function () {
   // 2. Controllo che il campo nomeBurger non sia vuoto

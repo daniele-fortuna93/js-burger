@@ -23,6 +23,13 @@ h2 {
   background-color: #fff;
   width: 50%;
 }
+header,
+footer{
+  height: 125px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+}
 #name_burger_input,
 #coupon,
 #calculate{
@@ -33,11 +40,20 @@ h2 {
 /* Header */
 header{
   background-color: #fdbb40;
-  padding: 50px 30px 40px 30px;
+  padding: 0 30px;
+  position: relative;
+}
+header img{
+  width: 265px;
+  position: absolute;
+  right: -50px;
+  top: -30px;
 }
 /* main */
 main{
   padding: 50px 30px;
+  height: calc( 100vh - 250px);
+  overflow-y: auto;
 }
 /* name_burger */
 .name_burger{
@@ -64,6 +80,7 @@ main{
   width: 45px;
 }
 .ingredients_list li label{
+  position: relative;
   display: flex;
   align-items: center;
   margin-left: 15px;
@@ -72,7 +89,14 @@ main{
   color: red;
 }
 .checked{
+  font-size: 15px;
   margin: 0 15px;
+}
+#check{
+  visibility: hidden;
+  top: -4px;
+  right: 28%;
+  position: absolute;
 }
 /* /ingredients_list */
 /* discount */
@@ -103,7 +127,25 @@ main{
    font-weight: bold;
    font-size: 30px;
    background-color: #d33359;
-   display: flex;
    justify-content: space-between;
-   padding: 40px 30px;
  }
+/* responsive */
+@media screen and (max-width: 1500px) {
+  h1{
+    font-size: 50px;
+  }
+  header img{
+    width: 225px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  .container{
+    width: 65%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .container{
+    width: 100%;
+    overflow: hidden;
+  }
+}
