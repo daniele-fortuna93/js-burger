@@ -7,25 +7,101 @@
 body{
   background-color: #fff5e2;
 }
-
+/* typo */
+h1{
+  font-size: 60px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
 /* mix */
 
 .container {
   background-color: #fff;
   width: 50%;
 }
-
+#name_burger_input,
+#coupon,
+#calculate{
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
 /* Header */
 header{
   background-color: #fdbb40;
   padding: 50px 30px 40px 30px;
 }
- /* main */
+/* main */
+main{
+  padding: 50px 30px;
+}
+/* name_burger */
+.name_burger{
+  margin-bottom: 30px;
+}
+#name_burger_input{
+  font-size: 30px;
+  box-shadow: 0px 1px 8px rgba(150, 150, 150, 0.5);
+}
+/* /name_burger */
+/* ingredients_list */
+.ingredients_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+.ingredients_list li {
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  list-style-type: none;
+}
+.ingredients_list li img {
+  width: 45px;
+}
+.ingredients_list li label{
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.ingredients_list li label span {
+  color: red;
+}
+.checked{
+  margin: 0 15px;
+}
+/* /ingredients_list */
+/* discount */
+.discount{
+  margin: 40px 0 25px;
+}
+#coupon{
+  margin-left: 10px;
+  width: 60%;
+  background-color: #fff5e2;
+  padding: 4px 3px;
+}
+/* /discount */
+/* button */
 .button_calculate{
   text-align: center;
 }
+#calculate{
+  background-color: #fdbb40;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* /button */
  /* footer */
  footer {
+   color: #fff;
+   font-weight: bold;
+   font-size: 30px;
    background-color: #d33359;
    display: flex;
    justify-content: space-between;

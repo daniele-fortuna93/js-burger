@@ -15,7 +15,7 @@
       <main>
         <!-- nome burger -->
         <div class="name_burger">
-          <input id="name_burger_input" type="text" placeholder="Insert your burger name">
+          <input id="name_burger_input" type="text" placeholder="Burger name">
         </div>
         <!-- /nome burger -->
         <!-- lista ingredienti -->
@@ -23,18 +23,39 @@
           <h2>Ingredients</h2>
           <ul class="ingredients_list">
             <li>
+              <img src="img/cheese.svg" alt="">
               <label for="cheese">Cheese
-                <input class="checked" id="cheese" type="checkbox" name="" value="4">
+                <input class="checked" id="cheese" type="checkbox" value="3"><span>add</span>
               </label>
             </li>
             <li>
+              <img src="img/fried-egg.svg" alt="">
               <label for="egg">Egg
-                <input class="checked" id="egg" type="checkbox" name="" value="4">
+                <input class="checked" id="egg" type="checkbox" value="4"><span>add</span>
               </label>
             </li>
             <li>
+              <img src="img/mustard.svg" alt="">
               <label for="mustard">Mustard
-                <input class="checked" id="mustard" type="checkbox" name="" value="4">
+                <input class="checked" id="mustard" type="checkbox" value="2"><span>add</span>
+              </label>
+            </li>
+            <li>
+              <img src="img/tomato.svg" alt="">
+              <label for="tomato">Tomato
+                <input class="checked" id="tomato" type="checkbox" value="3"><span>add</span>
+              </label>
+            </li>
+            <li>
+              <img src="img/lettuce.svg" alt="">
+              <label for="lettuce">Lettuce
+                <input class="checked" id="lettuce" type="checkbox" value="3"><span>add</span>
+              </label>
+            </li>
+            <li>
+              <img src="img/ketchup.svg" alt="">
+              <label for="ketchup">Ketchup
+                <input class="checked" id="ketchup" type="checkbox" value="2"><span>add</span>
               </label>
             </li>
           </ul>
@@ -49,14 +70,14 @@
         <!-- coupon sconto -->
         <!-- bottone calcolo -->
         <div class="button_calculate">
-          <button id="calculate" type="button" name="button">Calculate</button>
+          <button id="calculate" type="button" name="button">calculate</button>
         </div>
         <!-- bottone calcolo -->
       </main>
       <!-- totale -->
       <footer>
         <div>Your price</div>
-        <div>€ <span id="total"></span></div>
+        <div>€ <span id="total">0.00</span></div>
       </footer>
       <!-- /totale -->
     </div>
