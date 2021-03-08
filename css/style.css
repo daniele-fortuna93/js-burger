@@ -87,6 +87,7 @@ main{
 }
 .ingredients_list li label span {
   color: red;
+  cursor: pointer;
 }
 .checked{
   font-size: 15px;
@@ -106,8 +107,9 @@ main{
   font-family: "Font Awesome 5 Free";
   content:"\f00c";
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 900;
   top: -5px;
+  cursor: pointer;
 }
 .checked:checked::before{
   opacity:1;
