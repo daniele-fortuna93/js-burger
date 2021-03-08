@@ -25,7 +25,7 @@ h2 {
 }
 header,
 footer{
-  height: 125px;
+  height: 115px;
   display: flex;
   align-items: center;
   padding: 0 30px;
@@ -52,7 +52,7 @@ header img{
 /* main */
 main{
   padding: 50px 30px;
-  height: calc( 100vh - 250px);
+  height: calc( 100vh - 230px);
   overflow-y: auto;
 }
 /* name_burger */
@@ -91,6 +91,26 @@ main{
 .checked{
   font-size: 15px;
   margin: 0 15px;
+}
+.checked::after{
+  display:block;
+  content:"";
+  height:15px;
+  width:15px;
+  background-color: #d33359;
+  border-radius: 2px;
+}
+.checked::before{
+  opacity: 0;
+  position: absolute;
+  font-family: "Font Awesome 5 Free";
+  content:"\f00c";
+  font-size: 24px;
+  font-weight: 600;
+  top: -5px;
+}
+.checked:checked::before{
+  opacity:1;
 }
 #check{
   visibility: hidden;
@@ -147,5 +167,20 @@ main{
   .container{
     width: 100%;
     overflow: hidden;
+  }
+}
+@media screen and (max-height: 550px) {
+  main{
+    height: calc(100vh - 180px);
+  }
+  h1{
+    font-size: 35px;
+  }
+  footer{
+    font-size: 25px;
+  }
+  header,
+  footer{
+    height: 90px;
   }
 }
